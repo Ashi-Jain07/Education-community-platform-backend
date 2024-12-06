@@ -18,7 +18,7 @@ const io = new Server(server, {
         methods: ["GET", "POST", "DELETE", "PATCH", "PUT"],
     },
 });
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
