@@ -14,7 +14,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "https://education-community-platform.vercel.app/",
+        origin: "https://education-community-platform.vercel.app",
         methods: ["GET", "POST", "DELETE", "PATCH", "PUT"],
     },
 });
@@ -23,7 +23,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(express.json());
 app.use(cors({
-    origin: "https://education-community-platform.vercel.app/",
+    origin: "https://education-community-platform.vercel.app",
     methods: ["GET", "POST", "DELETE", "PATCH", "PUT"],
 }));
 
